@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let div = document.createElement("div");
+        div.innerHTML = "This texi is optional";
+        div.style.fontSize = "40px";
+        div.style.fontWeight = "bold";
+        div.style.marginTop = "20px";
+        let but = document.createElement("button");
+        but.innerHTML = "Press to say hide text";
+        but.style.backgroundColor = "Cyan";
+        but.style.borderRadius = "12%";
+        but.style.display = "block";
+        but.style.margin = "auto";
+        but.style.marginTop = "10px";
+        but.onclick = function() {
+        div.style.backgroundColor = "yellow";
+        div.style.color = "red";
+        };
+        document.body.appendChild(div);
+        document.body.appendChild(but);
+    </script>
+</body>
+</html>

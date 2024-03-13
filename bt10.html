@@ -1,0 +1,32 @@
+<!-- 3 thuộc tính này, innerText, textContent và innerHTML, đều được sử dụng để truy xuất hoặc thay đổi nội dung của một element. Tuy nhiên, chúng có điểm khác biệt:
+innerText:
+Thuộc tính này trả về nội dung có cả định dạng (định dạng được xử lý bởi trình duyệt) và không hiển thị đối tượng từ HTML 5.
+Tất cả các dấu cách và khoảng trắng đều được xem là các ký tự đầy đủ.
+Được hỗ trợ bởi Internet Explorer, trong khi các trình duyệt khác như Firefox, Chrome và Safari đều hỗ trợ textContent.
+textContent:
+Thuộc tính này trả về nội dung mà không có cả định dạng.
+Nó kết hợp tất cả các khoảng trắng và ký tự đặc biệt thành một chuỗi ký tự đơn.
+Hỗ trợ tốt trên các trình duyệt hiện đại.
+innerHTML:
+Thuộc tính này trả về nội dung bao gồm cả định dạng (HTML tags) và không hiển thị đối tượng từ HTML 5.
+Được hỗ trợ bởi hầu hết các trình duyệt phổ biến như Internet Explorer, Firefox, Chrome và Safari.
+Ví Dụ: -->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="test">
+        <b>Bold</b> and <i>Italic</i>
+    </div>
+    <script>
+        let test = document.getElementById("test");
+            console.log(test.innerText); 
+            console.log(test.textContent);
+            console.log(test.innerHTML);  
+    </script>
+</body>
+</html>
